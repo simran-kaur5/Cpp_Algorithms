@@ -18,7 +18,7 @@ Kadane’s Algorithm iterates through the array and, for each element:
 
 ## Code Explanation
 
-The function `maxSubArray` takes an integer vector as input and returns the maximum sum of its contiguous subarrays. 
+The function `maxSubArray` takes an integer vector as input and returns the maximum sum of its contiguous subarrays.. 
 
 ```cpp
 int maxSubArray(vector<int> &vec) {
