@@ -2,6 +2,7 @@
 
 Welcome to the **C++ Algorithms and Data Structures** repository! This repo contains a collection of essential algorithms and data structure implementations in C++. It is designed to be a resource for anyone learning C++ or preparing for coding interviews.
 
+
 ## Table of Contents
 
 - [About](#about)
