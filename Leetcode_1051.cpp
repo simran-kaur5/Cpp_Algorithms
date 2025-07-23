@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 // 1051. Height Checker
 class Solution {
@@ -7,17 +8,10 @@ class Solution {
         int heightChecker(vector<int>& heights) {
             int res = 0;
             int size = heights.size();
-            vector<int> exp;
-            for(int val : heights) {
-                exp.push_back(val);
-            }
-            for(int i=0;i<size;i++) {
-                for(int j=0;j<size-1;j++){
-                    if(exp[j] > exp[j+1]){
-                        swap(exp[j],exp[j+1]);
-                    }
-                }
-            }
+            vector<int> exp(heights); // insert values of heightS in exp
+            
+            sort(exp.begin() , exp.end());   //inbuilt func in c++ to sort vec
+            
             for(int i=0;i<exp.size();i++){
                 if(exp[i] != heights[i]){
                     res++;
